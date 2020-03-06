@@ -11,19 +11,21 @@ from discord.ext import commands
 load_dotenv()
 
 bots = commands.Bot(command_prefix='|')
-wendString = ["Cala a boca Wendell", "Wendell fica quieto pelo amor de jesus",
-            "CALA A BOCA WENDELL", "boa wendell", "Agora você foi longe demais, Wendell.",
-            "Silêncio, cristão da putaria", "calor da porra", 
+
+wendString = ["Cala a boca Wendell", 
+            "Wendell fica quieto pelo amor de jesus",
+            "CALA A BOCA WENDELL", 
+            "boa wendell", 
+            "Agora você foi longe demais, Wendell.",
+            "Silêncio, cristão da putaria", 
+            "calor da porra", 
             "Oii Wendell...chama pvt?"]
+
+channel = bots.get_channel(490286224754475008) #ID
+game = discord.Game("Chaser!!")
 
 @bots.event
 async def on_ready():
-
-    global channel
-    global game
-
-    channel = bots.get_channel(490286224754475008) #ID
-    game = discord.Game("Chaser!!") 
 
     print(f"Misaka Misaka is turning on!")
     print(f"Please wait...")
