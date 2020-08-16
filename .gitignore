@@ -104,4 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # ignores the token
-/src/tokens.py
+tokens.py
